@@ -15,9 +15,9 @@ class Sales {
 
     public void displayInvoice() {
         System.out.println("Product: " + productName);
-        System.out.println("Price: $" + price);
+        System.out.println("Price: P" + price);
         System.out.println("Quantity: " + quantity);
-        System.out.println("Total: $" + calculateTotal());
+        System.out.println("Total: P" + calculateTotal());
     }
 
     public String getProductName() {
@@ -43,10 +43,10 @@ class Service extends Sales {
 
     public void displayInvoice() {
         System.out.println("Product: " + getProductName());
-        System.out.println("Price: $" + price);
+        System.out.println("Price: P" + price);
         System.out.println("Quantity: " + quantity);
         System.out.println("Duration: " + duration + " hours");
-        System.out.println("Total: $" + calculateTotal());
+        System.out.println("Total: P" + calculateTotal());
     }
 }
 
